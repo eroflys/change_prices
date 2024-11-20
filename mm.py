@@ -155,7 +155,7 @@ from requests import get, post
 #     print(html_format)
 #
 # def main():
-#     application = ApplicationBuilder().token('6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4').build()
+#     application = ApplicationBuilder().token('tokeb').build()
 #
 #     start_handler = CommandHandler('start', start)
 #     change_handler = CommandHandler('change', precho)
@@ -171,7 +171,7 @@ from requests import get, post
 # if __name__ == '__main__':
 #     main()
 
-bot = telebot.TeleBot('6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4')
+bot = telebot.TeleBot('tokeb')
 
 def del_b_u(message):
     res = message
@@ -330,14 +330,14 @@ def i11and12():
         for i in iphones12_pro_max:
             message += i + ' - ' + converter(iphones12_pro_max[i]) + '\n'
     message += '\n<b>НАВИГАЦИЯ</b>🧭🗺️\n\n🧑‍💻Для связи:\n\n@Karloff_Devices\n+7(903) 322-00-00\n\n@Vladejslavoi\n+7 (928) 654-54-53\n\n\nМы работаем:\nПн-Сб с 10:00 до 21:00\n🗺️Г. Москва,\nметро Багратионовская,\nТЦ «Горбушка ул.Барклая 8,\n123 павильон.\n\nДоставка по Москве🚗\nРегионам России и странам СНГ✈️'
-    # post('https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@testchannel1102&message_id=5&parse_mode=HTML&text=' + message)
+    # post('https://api.telegram.org/bot/editMessageText?chat_id=@testchannel1102&message_id=5&parse_mode=HTML&text=' + message)
     # print(message)
     # return message
     # context.bot.editMessageText(chat_id='@karloffdevices', message_id=441, parse_mode='HTML', text=message)
     response = get('https://t.me/karloffdevices/441')
     if del_b_u(message) not in str(response.text).split('meta property="og:description" content="')[1].split('">')[0]:
         return message
-        # post('https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@karloffdevices&message_id=441&parse_mode=HTML&text='+message)
+        # post('https://api.telegram.org/bot/editMessageText?chat_id=@karloffdevices&message_id=441&parse_mode=HTML&text='+message)
     else:
         return message
 
@@ -420,7 +420,7 @@ def i13():
         for i in iphones13_pro_max_256:
             message += i + ' - ' + converter(iphones13_pro_max_256[i]) + '\n'
     message += '\n<b>НАВИГАЦИЯ</b>🧭🗺️\n\n🧑‍💻Для связи:\n\n@Karloff_Devices\n+7(903) 322-00-00\n\n@Vladejslavoi\n+7 (928) 654-54-53\n\n\nМы работаем:\nПн-Сб с 10:00 до 21:00\n🗺️Г. Москва,\nметро Багратионовская,\nТЦ «Горбушка ул.Барклая 8,\n123 павильон.\n\nДоставка по Москве🚗\nРегионам России и странам СНГ✈️\n\n#IPhone13'
-    # post('https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@testchannel1102&message_id=4&parse_mode=HTML&text=' + message)
+    # post('https://api.telegram.org/bottokeb/editMessageText?chat_id=@testchannel1102&message_id=4&parse_mode=HTML&text=' + message)
     # print(message)
     response = get('https://t.me/karloffdevices/440')
     return message
@@ -428,7 +428,7 @@ def i13():
     # response = get('https://t.me/karloffdevices/440')
     # if message not in str(response.text):
     #     post(
-    #         'https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@karloffdevices&message_id=440&parse_mode=HTML&text=' + message)
+    #         'https://api.telegram.org/bottokeb/editMessageText?chat_id=@karloffdevices&message_id=440&parse_mode=HTML&text=' + message)
 
 
 def i14():
@@ -559,13 +559,13 @@ def i14():
         for i in iphone14_pro_max_1tb:
             message += i + ' - ' + converter(iphone14_pro_max_1tb[i]) + '\n'
     message += '\n\n🧑‍💻Для связи:\n\n@Karloff_Devices\n+7(903) 322-00-00\n\n@Vladejslavoi\n+7 (928) 654-54-53\n\n\nМы работаем:\nПн-Сб с 10:00 до 21:00\n🗺️Г. Москва,\nметро Багратионовская,\nТЦ «Горбушка ул.Барклая 8,\n123 павильон.\n\nДоставка по Москве🚗\nРегионам России и странам СНГ✈️\n\nIPhone14'
-    # post('https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@testchannel1102&message_id=3&parse_mode=HTML&text=' + message)
+    # post('https://api.telegram.org/bottokeb/editMessageText?chat_id=@testchannel1102&message_id=3&parse_mode=HTML&text=' + message)
     return message
     # context.bot.editMessageText(chat_id='@karloffdevices', message_id=439, parse_mode='HTML', text=message)
     # response = get('https://t.me/karloffdevices/439')
     # if message not in str(response.text):
     #     post(
-    #         'https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@karloffdevices&message_id=439&parse_mode=HTML&text=' + message)
+    #         'https://api.telegram.org/bottokeb/editMessageText?chat_id=@karloffdevices&message_id=439&parse_mode=HTML&text=' + message)
 
 
 def i15():
@@ -752,14 +752,14 @@ Black /Evergreen /Pacific Blue /Taupe -9.000
 Регионам России и странам СНГ✈️
 
 #iphone15'''
-    # post('https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@testchannel1102&message_id=2&parse_mode=HTML&text=' + message)
+    # post('https://api.telegram.org/bottokeb/editMessageText?chat_id=@testchannel1102&message_id=2&parse_mode=HTML&text=' + message)
 
     # response = get('https://t.me/karloffdevices/777')
     return message
     # if message not in str(response.text):
     #     print(message)
     #     post(
-    #         'https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@karloffdevices&message_id=777&parse_mode=HTML&text=' + message)
+    #         'https://api.telegram.org/bottokeb/editMessageText?chat_id=@karloffdevices&message_id=777&parse_mode=HTML&text=' + message)
 
 
 
