@@ -15,8 +15,8 @@ import io
 # with io.open("tests.py", 'r', encoding='utf-8') as file:
 #     exec(file.read())
 # print(1)
-# api_id = 26300743
-# api_hash = '4285078f9b776db7e538f6f0edb06662'
+# api_id = 263
+# api_hash = 'hash'
 # client = TelegramClient('session_name', api_id, api_hash)
 # texts = {'dyson': [296], 'iMac': [292], 'playstation': [295], 'iPad': [291], 'Watch': [289], 'MacBook': [290],
 #                'iPhone 11_12_13': [297], 'iPhone 14': [298], 'iPhone 15': [299], 'iPhone 16': [300],
@@ -219,7 +219,7 @@ import io
 #     print(html_format)
 #
 # def main():
-#     application = ApplicationBuilder().token('6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4').build()
+#     application = ApplicationBuilder().token('token').build()
 #
 #     start_handler = CommandHandler('start', start)
 #     change_handler = CommandHandler('change', precho)
@@ -235,8 +235,8 @@ import io
 # if __name__ == '__main__':
 #     main()
 
-bot = telebot.TeleBot('6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4')
-# https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/channels.getMessages?
+bot = telebot.TeleBot('token')
+# https://api.telegram.org/bottoken/channels.getMessages?
 
 def normal_form(message):
     res = ''
@@ -362,14 +362,14 @@ def i11_12_13(texts):
             message += new_price(i) + '\n'
     message += '\n**НАВИГАЦИЯ**🧭🗺️\n\n🧑‍💻Для связи:\n\n@Karloff\\_Devices\n+7(903) 322-00-00\n\n@Vladejslavoi\n+7 (928) 654-54-53\n\n\nМы работаем:\nПн-Сб с 10:00 до 21:00\n🗺️Г. Москва,\nметро Багратионовская,\nТЦ «Горбушка ул.Барклая 8,\n123 павильон.\n\nДоставка по Москве🚗\nРегионам России и странам СНГ✈️'
     return normal(message)
-    # post('https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@testchannel1102&message_id=5&parse_mode=HTML&text=' + message)
+    # post('https://api.telegram.org/bottoken/editMessageText?chat_id=@testchannel1102&message_id=5&parse_mode=HTML&text=' + message)
     # print(message)
     # return message
     # context.bot.editMessageText(chat_id='@karloffdevices', message_id=441, parse_mode='HTML', text=message)
     # response = get('https://t.me/karloffdevices/441')
     # if del_b_u(message) not in str(response.text).split('meta property="og:description" content="')[1].split('">')[0]:
     #     return message
-    #     # post('https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@karloffdevices&message_id=441&parse_mode=HTML&text='+message)
+    #     # post('https://api.telegram.org/bottoken/editMessageText?chat_id=@karloffdevices&message_id=441&parse_mode=HTML&text='+message)
     # else:
     #     return message
 
@@ -387,7 +387,7 @@ def i16(texts):
     # response = get('https://t.me/karloffdevices/440')
     # if message not in str(response.text):
     #     post(
-    #         'https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@karloffdevices&message_id=440&parse_mode=HTML&text=' + message)
+    #         'https://api.telegram.org/bottoken/editMessageText?chat_id=@karloffdevices&message_id=440&parse_mode=HTML&text=' + message)
 
 
 def i14(texts):
@@ -404,7 +404,7 @@ def i14(texts):
     # response = get('https://t.me/karloffdevices/439')
     # if message not in str(response.text):
     #     post(
-    #         'https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@karloffdevices&message_id=439&parse_mode=HTML&text=' + message)
+    #         'https://api.telegram.org/bottoken/editMessageText?chat_id=@karloffdevices&message_id=439&parse_mode=HTML&text=' + message)
 
 
 def i15(texts):
@@ -420,7 +420,7 @@ def i15(texts):
     # if message not in str(response.text):
     #     print(message)
     #     post(
-    #         'https://api.telegram.org/bot6844736801:AAHIKORvlkryyfWeVRmd7biVMvGL-OicIF4/editMessageText?chat_id=@karloffdevices&message_id=777&parse_mode=HTML&text=' + message)
+    #         'https://api.telegram.org/bottoken/editMessageText?chat_id=@karloffdevices&message_id=777&parse_mode=HTML&text=' + message)
 
 
 
