@@ -14,8 +14,8 @@ async def get_channel_messages(channel_id, message_ids):
             print(f"Error: {e}")
 
 while True:
-    api_id = 26300743
-    api_hash = '4285078f9b776db7e538f6f0edb06662'
+    api_id = 2633
+    api_hash = 'hash'
     client = TelegramClient('session_name', api_id, api_hash)
     texts = {'dyson': [296], 'iMac': [292], 'playstation': [295], 'iPad': [291], 'Watch': [289], 'MacBook': [290],
                    'iPhone 11_12_13': [297], 'iPhone 14': [298], 'iPhone 15': [299], 'iPhone 16': [300],
